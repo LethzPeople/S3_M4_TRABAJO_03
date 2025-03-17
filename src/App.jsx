@@ -20,7 +20,7 @@ function App() {
               </div>
             </main>
             <footer className="mt-16 pt-6 border-t dark:border-gray-700 text-center text-gray-600 dark:text-gray-400">
-              <p>Carrito de Compras con React Context - 2025</p>
+              <p>Tienda Online - 2025</p>
             </footer>
           </div>
         </div>
