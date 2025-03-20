@@ -3,9 +3,10 @@ import { CartContext } from "../context/CartContext";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity, totalPrice } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity, totalPrice, vaciarCarrito } = useContext(CartContext);
   const { darkMode } = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
+
 
   const toggleCart = () => {
     setIsOpen(!isOpen);
@@ -106,6 +107,9 @@ const Cart = () => {
                   className="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded transition-colors duration-300"
                 >
                   Finalizar Compra
+                </button>
+                <button onClick={vaciarCarrito} className="mt-2 bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded transition-colors duration-300">
+                  Vaciar Carrito
                 </button>
               </div>
             </div>
